@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="apellidos_completos">Apellidos Completos</string>
+    <string name="edad">Edad</string>
+    <string name="formulario_de_registro">Formulario de Registro</string>
+    <string name="nombre_completos">Nombre Completos</string>
+    <string name="confirmar">Confirmar</string>
+</resources>
