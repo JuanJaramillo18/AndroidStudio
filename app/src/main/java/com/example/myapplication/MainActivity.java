@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         dbHelper = new FeedReaderDbHelper(this);
-
+x
         txtid = findViewById(R.id.editTextText);
         txtnombre = findViewById(R.id.editTextText3);
         txtapellido = findViewById(R.id.editTextText2);
