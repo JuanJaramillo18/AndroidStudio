@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:labelFor="@+id/editTextText"
+        android:labelFor="@+id/txtnombre"
         android:text="@string/nombre_completos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.209"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/txtnombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -41,7 +41,7 @@
         android:inputType="text"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintHorizontal_bias="0.268"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -50,15 +50,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:labelFor="@+id/editTextText3"
+        android:labelFor="@+id/txtapellido"
         android:text="@string/apellidos_completos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/txtnombre" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/txtapellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints="name"
@@ -75,15 +75,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:labelFor="@+id/editTextText2"
-        android:text="@string/edad"
+        android:labelFor="@+id/txtid"
+        android:text="ID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtapellido" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/txtid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -96,14 +96,46 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Guardar"
         android:layout_width="312dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:minHeight="48dp"
-        android:text="@string/confirmar"
+        android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtid" />
+
+    <Button
+        android:id="@+id/Actualizar"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:onClick="Actualizar"
+        android:text="Actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <Button
+        android:id="@+id/Eliminar"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:onClick="Eliminar"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <Button
+        android:id="@+id/Buscar"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:onClick="Buscar"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="428dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
