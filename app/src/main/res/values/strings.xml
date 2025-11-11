@@ -5,4 +5,12 @@
     <string name="formulario_de_registro">Formulario de Registro</string>
     <string name="nombre_completos">Nombre Completos</string>
     <string name="confirmar">Confirmar</string>
+
+    <!-- Textos para activity_main -->
+    <string name="id_label">ID</string>
+    <string name="guardar">Guardar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="buscar">Buscar</string>
+    <string name="listar">Listar</string>  <!-- Texto nuevo añadido -->
 </resources>

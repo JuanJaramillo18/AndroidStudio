@@ -14,34 +14,32 @@
         android:text="@string/formulario_de_registro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:labelFor="@+id/txtnombre"
         android:text="@string/nombre_completos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtnombre"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/txtnombre"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints="name"
         android:ems="10"
         android:inputType="text"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.268"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -52,21 +50,21 @@
         android:layout_marginTop="16dp"
         android:labelFor="@+id/txtapellido"
         android:text="@string/apellidos_completos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.214"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtapellido"
         app:layout_constraintTop_toBottomOf="@+id/txtnombre" />
 
     <EditText
         android:id="@+id/txtapellido"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints="name"
         android:ems="10"
         android:inputType="text"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.267"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -76,66 +74,80 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:labelFor="@+id/txtid"
-        android:text="ID"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/id_label"
+        app:layout_constraintStart_toStartOf="@+id/txtid"
         app:layout_constraintTop_toBottomOf="@+id/txtapellido" />
 
     <EditText
         android:id="@+id/txtid"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/Guardar"
-        android:layout_width="312dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:minHeight="48dp"
+        android:id="@+id/btnguardar"
+        android:layout_width="400dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="Guardar"
         android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtid" />
 
     <Button
-        android:id="@+id/Actualizar"
-        android:layout_width="313dp"
-        android:layout_height="51dp"
-        android:onClick="Actualizar"
-        android:text="Actualizar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="502dp" />
-
-    <Button
-        android:id="@+id/Eliminar"
-        android:layout_width="313dp"
-        android:layout_height="51dp"
-        android:onClick="Eliminar"
-        android:text="Eliminar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="575dp" />
-
-    <Button
-        android:id="@+id/Buscar"
-        android:layout_width="306dp"
-        android:layout_height="50dp"
+        android:id="@+id/btnbuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:onClick="Buscar"
         android:text="Buscar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="428dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnguardar" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="Actualizar"
+        android:text="Actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbuscar" />
+
+    <Button
+        android:id="@+id/btneliminar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="Eliminar"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnactualizar" />
+
+    <Button
+        android:id="@+id/btnlistar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="Listar"
+        android:text="Listar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btneliminar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
